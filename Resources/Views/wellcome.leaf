@@ -1,0 +1,26 @@
+<html>
+<body>
+	<h1>It's PoPutCar made by Solo.Net's enc.® </h1>
+	<p> Wellcome to our app api </p>
+
+<ul>
+<p>Saved locations : </p>
+<p> #(locations.count) </p>
+  #for(location in locations) {
+    <li>#(location.name)</li>
+  }
+</ul>
+
+
+<h2> Add new location </h2>
+<form method="post" action="/addLocation">
+	<p> Name: <input type="text" name="name"></p>
+	<p> Location</p>
+	<p> Latitude <input type="number" step="0.000001" name="latitude"></p>
+	<p> Longitude <input type="number" step="0.000001" name="longitude"></p>
+	<button type="submit">Add new</button>
+</form>
+
+
+</body>
+</html>
